@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculo mental</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="wireframe.css">
+  <script src="https://api.countapi.xyz/hit/findthecolors.github.io/visits?callback=ftcViews" async></script>
+  <style>
+    .button-82-pushable {
+      position: relative;
+      border: none;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      outline-offset: 4px;
+      transition: filter 250ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    .button-82-shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background: hsl(0deg 0% 0% / 0.25);
+      will-change: transform;
+      transform: translateY(2px);
+      transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+    }
+
+    .button-82-edge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background: linear-gradient(to left,
+        rgb(82, 0, 0) 0%,
+        rgb(163, 0, 0) 8%,
+        rgb(163, 0, 0) 92%,
+        rgb(82, 0, 0) 100%);
+    }
+
+    .button-82-front {
+      display: block;
+      position: relative;
+      padding: 12px 27px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      color: white;
+      background: rgb(240, 0, 0);
+      will-change: transform;
+      transform: translateY(-4px);
+      transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+    }
+
+    @media (min-width: 768px) {
+      .button-82-front {
+        font-size: 1.25rem;
+        padding: 12px 42px;
+      }
+    }
+
+    .button-82-edge2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background: linear-gradient(to left,
+        rgb(0, 0, 82) 0%,
+        rgb(0, 0, 163) 8%,
+        rgb(0, 0, 163) 92%,
+        rgb(0, 0, 82) 100%);
+    }
+    .button-82-front2 {
+      display: block;
+      position: relative;
+      padding: 12px 27px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      color: white;
+      background: rgb(0, 0, 240);
+      will-change: transform;
+      transform: translateY(-4px);
+      transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+    }
+
+    .button-82-edge3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background: linear-gradient(to left,
+        rgb(0, 82, 0) 0%,
+        rgb(0, 163, 0) 8%,
+        rgb(0, 163, 0) 92%,
+        rgb(0, 82, 0) 100%);
+    }
+    .button-82-front3 {
+      display: block;
+      position: relative;
+      padding: 12px 27px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      color: white;
+      background: rgb(0, 240, 0);
+      will-change: transform;
+      transform: translateY(-4px);
+      transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+    }
+
+    .button-82-pushable:hover {
+      filter: brightness(110%);
+      -webkit-filter: brightness(110%);
+    }
+
+    .button-82-pushable:hover .button-82-front {
+      transform: translateY(-6px);
+      transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+    }
+
+    .button-82-pushable:active .button-82-front {
+      transform: translateY(-2px);
+      transition: transform 34ms;
+    }
+
+    .button-82-pushable:hover .button-82-shadow {
+      transform: translateY(4px);
+      transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+    }
+
+    .button-82-pushable:active .button-82-shadow {
+      transform: translateY(1px);
+      transition: transform 34ms;
+    }
+
+    .button-82-pushable:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    .grid-container {
+      display: grid;
+      grid: auto / auto auto auto auto auto;
+      grid-gap: 10px;
+      background-color: rgb(102, 95, 92);
+      padding: 10px;
+      color: #fff1a2;
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .grid-item {
+      background-color: #000000cc;
+      padding: 15px
+    }
+
+    .grid-yellow {
+      display: grid;
+      grid: auto / auto;
+      grid-gap: 15px;
+      background-color: rgb(255, 255, 0);
+      padding: 15px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .grid-purple {
+      display: grid;
+      grid: auto / auto;
+      grid-gap: 15px;
+      background-color: rgb(128, 0, 128);
+      padding: 15px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .grid-cyan {
+      display: grid;
+      grid: auto / auto;
+      grid-gap: 15px;
+      background-color: rgb(0, 255, 255);
+      padding: 15px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .grid-green {
+      display: grid;
+      grid: auto / auto;
+      grid-gap: 15px;
+      background-color: rgb(0, 128, 0);
+      padding: 15px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .grid-brown {
+      display: grid;
+      grid: auto / auto;
+      grid-gap: 15px;
+      background-color: rgb(150, 75, 0);
+      padding: 15px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .yellow {
+      background-color: rgb(255, 255, 0);
+      color: black;
+    }
+
+    .purple {
+      background-color: rgb(128, 0, 128);
+      color:white;
+    }
+
+    .cyan {
+      background-color: rgb(0, 255, 255);
+      color:black;
+    }
+
+    .green {
+      background-color: rgb(0, 128, 0);
+      color:black;
+    }
+
+    .brown {
+      background-color: rgb(150, 75, 0);
+      color: black;
+    }
+
+
+    .black {
+      background-color: black;
+    }
+
+    .imgautoadjust {
+      width: 10%;
+      height: auto;
+    }
+
+    .imgautoadjust2 {
+      width: 5%;
+      height: auto;
+    }
+
+    .imgautoadjust3 {
+      width: 80%;
+      height: auto;
+    }
+
+    .imgautoadjust4 {
+      width: 20%;
+      height: auto;
+    }
+
+    #seconds, #tens{
+      font-size:2em;
+      color:rgb(255, 255, 255);
+    }
+    .doispontos{
+      font-size:2em;
+      color:rgb(255, 255, 255);
+    }
+
+    .labelLevel{
+      display:inline-block;
+      width: 52px;
+      
+    }
+
+    .divLabel{
+      margin-bottom: 10px;
+    }
+
+    .viewsColor{
+      color:rgb(229, 226, 226);
+    }
+    
+  </style>
+</head>
+
+<body class="text-center">
+  <div class="p-3 h-100 d-flex flex-column bg-light" style="	background-image: linear-gradient(to bottom, rgba(100, 100, 255, 1), rgba(255, 255, 255, 1));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <div class="container mb-auto">
+      <div class="row">
+        <div class="mx-auto col-md-9">
+          <h1 class="text-light text-center" id="aqui2"><strong>Calculo mental</strong></h1>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-auto">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <p class="lead" id="corpoMensagem"><br></p> 
+          <div class="row">
+            <div class="mx-auto col-md-9">
+              <div class= "text-center" id="aqui"><b></b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-auto">
+      <div class="row">
+        <div class="col-2">
+          <label for="levelMenu" id="levelLabel" class="labelLevel" class="divlabel">Level</label>
+        </div>
+        <div class="col-2">
+          <select name="levels" id="qualLevel" onchange="qualLevelaspecto()" class="divLabel">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="col-8" >
+          <button class="button-82-pushable" role="button" href="#" onclick="myFunction()" id="botaonext" style="float: right;">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text"><strong>></strong>  </span>
+          </button>
+          <button class="button-82-pushable" role="button" href="#" onclick="confere(lvl)" id="botaoresultado" style="float: right;">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge3"></span>
+            <span class="button-82-front3 text"> <strong>=</strong> </span>
+          </button>
+          <button class="button-82-pushable" role="button" href="#" onclick="restartFunction()" id="botaorestart" style="float: right;">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge2"></span>
+            <span class="button-82-front2 text"> <img src="restart.png" class="imgautoadjust3" width="20" height="25"> </span>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" style=""></script>
+  <script>
+    let lvl = 1;
+    const divs = document.querySelectorAll(".grid-item");
+    const botaonext = document.getElementById('botaonext');
+    var somaatual
+    var sinal
+    var pergunta
+    var numeroatual
+
+		window.onload = startFunction();
+
+    //gerando número aletório entre min e max
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min) + min);
+    }
+    function calculoSoma(numero,sinal){
+    	if (sinal == 1){
+      	somaatual = somaatual + numero;
+        if (pergunta == ""){
+        	pergunta = somaatual + " + " + numero;
+        }
+        else{
+        	pergunta = pergunta + " + " + numero;
+        }
+        
+      }
+      if (sinal == 2){
+      	somaatual = somaatual - numero;
+        if (pergunta == ""){
+        	pergunta = somaatual + " - " + numero;
+        }
+        else{
+        	pergunta = pergunta + " - " + numero;
+        }
+      }
+    }
+    function gerarSinal(){
+    	return Math.floor(Math.random() * 2) + 1;
+    }
+    function teste(auxnumero,auxsinal){
+    	if (auxsinal == 2){
+      	if ((somaatual - auxnumero) > 0){
+        return true;
+        }
+        else{
+        	return false;
+        }
+      }
+      else{
+      	return true;
+      }
+    }
+    function startFunction() {
+      document.getElementById("corpoMensagem").innerHTML = "Qual o resultado?";
+      document.getElementById("aqui").innerHTML = "começar";
+      botaonext.style.display = 'block';
+      botaoresultado.style.display = 'none';
+      botaorestart.style.display = 'none';
+      document.getElementById("qualLevel").style.display = 'block'
+      qualLevelaspecto();
+      somaatual = 0;
+      sinal = 0;
+      pergunta = "";
+      numeroatual = 0;
+     }
+		function myFunction(){
+    	botaonext.style.display = 'none';
+      botaoresultado.style.display = 'block';
+      botaorestart.style.display = 'none';
+      document.getElementById("levelLabel").innerHTML ='Level';
+      var dificuldade;
+      dificuldade = document.getElementById("qualLevel").value;
+      dificuldade = parseInt(dificuldade);
+      var passos = 0;
+      somaatual = getRandomInt(10,100);
+      pergunta = somaatual;
+      while (passos <= dificuldade) {
+      	while (true){
+        	sinal = gerarSinal();
+        	numeroatual = getRandomInt(10,100);
+          if (teste(numeroatual,sinal)){
+        		calculoSoma(numeroatual,sinal);
+            break;
+          }
+         }
+        passos++;
+       }
+       document.getElementById("aqui").innerHTML = pergunta;
+      }
+		function qualLevelaspecto() {
+      document.getElementById("levelLabel").innerHTML ='Level';
+    }
+    function confere() {
+    	botaonext.style.display = 'none';
+      botaoresultado.style.display = 'none';
+      botaorestart.style.display = 'block';
+      document.getElementById("aqui").innerHTML = somaatual;
+    }
+    function restartFunction(){
+      startFunction();
+    }
+
+  </script>
+</body>
+
+</html>
