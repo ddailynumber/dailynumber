@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calculo mental</title>
+  <title>C&aacute;lculo mental</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="wireframe.css">
   <script src="https://api.countapi.xyz/hit/findthecolors.github.io/visits?callback=ftcViews" async></script>
@@ -278,7 +278,11 @@
     }
     .doispontos{
       font-size:2em;
-      color:rgb(255, 255, 255);
+      color:rgb(0, 0, 0);
+    }
+    .titulo{
+      font-size:2em;
+      color:rgb(86, 88, 211);
     }
 
     .labelLevel{
@@ -303,17 +307,17 @@
     <div class="container mb-auto">
       <div class="row">
         <div class="mx-auto col-md-9">
-          <h1 class="text-light text-center" id="aqui2"><strong>Calculo mental</strong></h1>
+          <h1 class="text-light text-center" id="aqui2"><strong>C&aacutelculo mental</strong></h1>
         </div>
       </div>
     </div>
     <div class="container mb-auto">
       <div class="row">
         <div class="col-md-12 mx-auto">
-          <p class="lead" id="corpoMensagem"><br></p> 
+          <p class="titulo" id="corpoMensagem"><strong>Qual &eacute o resultado?</strong></p> 
           <div class="row">
             <div class="mx-auto col-md-9">
-              <div class= "text-center" id="aqui"><b></b></div>
+              <div class= "text-center"><b><p><span id="aqui" class="doispontos"><strong>teste</strong></b></p></span></div>
             </div>
           </div>
         </div>
@@ -368,7 +372,7 @@
 
 		window.onload = startFunction();
 
-    //gerando número aletório entre min e max
+    //gerando nï¿½mero aletï¿½rio entre min e max
     function getRandomInt(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
@@ -412,8 +416,7 @@
       }
     }
     function startFunction() {
-      document.getElementById("corpoMensagem").innerHTML = "Qual o resultado?";
-      document.getElementById("aqui").innerHTML = "começar";
+      document.getElementById("aqui").innerHTML = "in&iacute;cio";
       botaonext.style.display = 'block';
       botaoresultado.style.display = 'none';
       botaorestart.style.display = 'none';
