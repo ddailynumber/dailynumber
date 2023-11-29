@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>C&aacute;lculo mental</title>
+  <title>Cálculo mental</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="wireframe.css">
   <script src="https://api.countapi.xyz/hit/findthecolors.github.io/visits?callback=ftcViews" async></script>
@@ -49,7 +49,7 @@
         rgb(163, 0, 0) 92%,
         rgb(82, 0, 0) 100%);
     }
-
+	
     .button-82-front {
       display: block;
       position: relative;
@@ -66,6 +66,24 @@
 
     @media (min-width: 768px) {
       .button-82-front {
+        font-size: 1.25rem;
+        padding: 12px 42px;
+      }
+    }
+	@media (min-width: 768px) {
+      .button-82-front2 {
+        font-size: 1.25rem;
+        padding: 12px 42px;
+      }
+    }
+	@media (min-width: 768px) {
+      .button-82-front3 {
+        font-size: 1.25rem;
+        padding: 12px 42px;
+      }
+    }
+	@media (min-width: 768px) {
+      .button-100-front {
         font-size: 1.25rem;
         padding: 12px 42px;
       }
@@ -124,6 +142,33 @@
       transition:
         transform 600ms cubic-bezier(.3, .7, .4, 1);
     }
+	.button-100-edge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background: linear-gradient(to left,
+        rgb(82, 0, 0) 0%,
+        rgb(163, 0, 0) 8%,
+        rgb(163, 0, 0) 92%,
+        rgb(82, 0, 0) 100%);
+    }
+	.button-100-front {
+      display: block;
+      position: relative;
+      padding: 12px 27px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      color: white;
+      background: rgb(50, 20, 100);
+      will-change: transform;
+      transform: translateY(-4px);
+      transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+    }
+	
 
     .button-82-pushable:hover {
       filter: brightness(110%);
@@ -156,135 +201,6 @@
       outline: none;
     }
 
-    .grid-container {
-      display: grid;
-      grid: auto / auto auto auto auto auto;
-      grid-gap: 10px;
-      background-color: rgb(102, 95, 92);
-      padding: 10px;
-      color: #fff1a2;
-      font-size: 10px;
-      text-align: center;
-    }
-
-    .grid-item {
-      background-color: #000000cc;
-      padding: 15px
-    }
-
-    .grid-yellow {
-      display: grid;
-      grid: auto / auto;
-      grid-gap: 15px;
-      background-color: rgb(255, 255, 0);
-      padding: 15px;
-      font-size: 15px;
-      text-align: center;
-    }
-
-    .grid-purple {
-      display: grid;
-      grid: auto / auto;
-      grid-gap: 15px;
-      background-color: rgb(128, 0, 128);
-      padding: 15px;
-      font-size: 15px;
-      text-align: center;
-    }
-
-    .grid-cyan {
-      display: grid;
-      grid: auto / auto;
-      grid-gap: 15px;
-      background-color: rgb(0, 255, 255);
-      padding: 15px;
-      font-size: 15px;
-      text-align: center;
-    }
-
-    .grid-green {
-      display: grid;
-      grid: auto / auto;
-      grid-gap: 15px;
-      background-color: rgb(0, 128, 0);
-      padding: 15px;
-      font-size: 15px;
-      text-align: center;
-    }
-
-    .grid-brown {
-      display: grid;
-      grid: auto / auto;
-      grid-gap: 15px;
-      background-color: rgb(150, 75, 0);
-      padding: 15px;
-      font-size: 15px;
-      text-align: center;
-    }
-
-    .yellow {
-      background-color: rgb(255, 255, 0);
-      color: black;
-    }
-
-    .purple {
-      background-color: rgb(128, 0, 128);
-      color:white;
-    }
-
-    .cyan {
-      background-color: rgb(0, 255, 255);
-      color:black;
-    }
-
-    .green {
-      background-color: rgb(0, 128, 0);
-      color:black;
-    }
-
-    .brown {
-      background-color: rgb(150, 75, 0);
-      color: black;
-    }
-
-
-    .black {
-      background-color: black;
-    }
-
-    .imgautoadjust {
-      width: 10%;
-      height: auto;
-    }
-
-    .imgautoadjust2 {
-      width: 5%;
-      height: auto;
-    }
-
-    .imgautoadjust3 {
-      width: 80%;
-      height: auto;
-    }
-
-    .imgautoadjust4 {
-      width: 20%;
-      height: auto;
-    }
-
-    #seconds, #tens{
-      font-size:2em;
-      color:rgb(255, 255, 255);
-    }
-    .doispontos{
-      font-size:2em;
-      color:rgb(0, 0, 0);
-    }
-    .titulo{
-      font-size:2em;
-      color:rgb(86, 88, 211);
-    }
-
     .labelLevel{
       display:inline-block;
       width: 52px;
@@ -307,17 +223,17 @@
     <div class="container mb-auto">
       <div class="row">
         <div class="mx-auto col-md-9">
-          <h1 class="text-light text-center" id="aqui2"></h1>
+          <h1 class="text-light text-center" id="aqui2"><strong>Cálculo mental</strong></h1>
         </div>
       </div>
     </div>
     <div class="container mb-auto">
       <div class="row">
         <div class="col-md-12 mx-auto">
-          <p class="titulo" id="corpoMensagem"></p> 
+          <p class="lead" id="corpoMensagem"><br></p> 
           <div class="row">
             <div class="mx-auto col-md-9">
-              <div class= "text-center"><b><p><span id="aqui" class="doispontos"><strong></strong></b></p></span></div>
+              <div class= "text-center" id="aqui"><b></b></div>
             </div>
           </div>
         </div>
@@ -325,7 +241,7 @@
     </div>
     <div class="container mb-auto">
       <div class="row">
-        <div class="col-2">
+	    <div class="col-2">
           <label for="levelMenu" id="levelLabel" class="labelLevel" class="divlabel">Level</label>
         </div>
         <div class="col-2">
@@ -335,12 +251,7 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
-	    <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-	  </select>
+          </select>
         </div>
         <div class="col-8" >
           <button class="button-82-pushable" role="button" href="#" onclick="myFunction()" id="botaonext" style="float: right;">
@@ -356,11 +267,33 @@
           <button class="button-82-pushable" role="button" href="#" onclick="restartFunction()" id="botaorestart" style="float: right;">
             <span class="button-82-shadow"></span>
             <span class="button-82-edge2"></span>
-            <span class="button-82-front2 text"> <img src="restart.png" class="imgautoadjust3" width="20" height="25"> </span>
+            <span class="button-82-front2 text"> <strong>«</strong></span>
           </button>
         </div>
-        
       </div>
+	  <div class="row">
+		<div class="col-2">
+		</div>
+		<div class="col-2">
+		</div>
+		<div class="col-8">
+			<button class="button-82-pushable" role="button" href="#" onclick="myMultiplicacao()" id="botaomultiplicacao" style="float: right;">
+            <span class="button-82-shadow"></span>
+            <span class="button-100-edge"></span>
+            <span class="button-100-front text"><strong>*</strong>  </span>
+          </button>
+		  <button class="button-82-pushable" role="button" href="#" onclick="resultadoMultiplicacao()" id="botaoresultadomultiplicacao" style="float: right;">
+            <span class="button-82-shadow"></span>
+            <span class="button-100-edge"></span>
+            <span class="button-100-front text"> <strong>=</strong> </span>
+          </button>
+          <button class="button-82-pushable" role="button" href="#" onclick="restartFunction()" id="botaorestart2" style="float: right;">
+            <span class="button-82-shadow"></span>
+            <span class="button-100-edge"></span>
+            <span class="button-100-front text"><strong>«</strong></span>
+          </button>
+		</div>
+	  </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -374,10 +307,11 @@
     var sinal
     var pergunta
     var numeroatual
+	var resulmulti
 
 		window.onload = startFunction();
 
-    //gerando n�mero alet�rio entre min e max
+    //gerando número aletório entre min e max
     function getRandomInt(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
@@ -421,10 +355,16 @@
       }
     }
     function startFunction() {
-      document.getElementById("aqui").innerHTML = "in&iacute;cio";
+      document.getElementById("corpoMensagem").innerHTML = "Qual é o resultado?";
+      document.getElementById("aqui").innerHTML = "começar";
       botaonext.style.display = 'block';
       botaoresultado.style.display = 'none';
       botaorestart.style.display = 'none';
+	  
+	  botaomultiplicacao.style.display = 'block';
+      botaoresultadomultiplicacao.style.display = 'none';
+      botaorestart2.style.display = 'none';
+	  
       document.getElementById("qualLevel").style.display = 'block'
       qualLevelaspecto();
       somaatual = 0;
@@ -432,10 +372,15 @@
       pergunta = "";
       numeroatual = 0;
      }
-		function myFunction(){
-    	botaonext.style.display = 'none';
+	function myFunction(){
+	  botaonext.style.display = 'none';
       botaoresultado.style.display = 'block';
       botaorestart.style.display = 'none';
+	  
+	  botaomultiplicacao.style.display = 'none';
+	  botaoresultadomultiplicacao.style.display = 'none';
+      botaorestart2.style.display = 'none';
+	  
       document.getElementById("levelLabel").innerHTML ='Level';
       var dificuldade;
       dificuldade = document.getElementById("qualLevel").value;
@@ -456,7 +401,7 @@
        }
        document.getElementById("aqui").innerHTML = pergunta;
       }
-		function qualLevelaspecto() {
+	function qualLevelaspecto() {
       document.getElementById("levelLabel").innerHTML ='Level';
     }
     function confere() {
@@ -468,6 +413,29 @@
     function restartFunction(){
       startFunction();
     }
+	function myMultiplicacao(){
+		botaonext.style.display = 'none';
+		botaoresultado.style.display = 'none';
+		botaorestart.style.display = 'none';
+	
+		botaomultiplicacao.style.display = 'none';
+		botaoresultadomultiplicacao.style.display = 'block';
+		botaorestart2.style.display = 'none';
+		var fator1
+		fator1 = getRandomInt(11,99)
+		var fator2
+		fator2 = getRandomInt(111,999)
+		resulmulti = fator1*fator2
+		document.getElementById("aqui").innerHTML = fator1 + " * " + fator2 
+	}
+	function resultadoMultiplicacao(){
+		botaoresultadomultiplicacao.style.display = 'none';
+		botaorestart2.style.display = 'block';
+		document.getElementById("aqui").innerHTML = resulmulti;
+	
+	}
+	
+	
 
   </script>
 </body>
