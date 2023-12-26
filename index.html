@@ -100,13 +100,13 @@
     }
 	  .Abs {
 
-  display: flex; // make us of Flexbox
+  display: flex;
 
-  align-items: center; // does vertically center the desired content
+  align-items: center;
 
-  justify-content: center; // horizontally centers single line items
+  justify-content: center;
 
-  text-align: center; // optional, but helps horizontally center text that breaks into multiple lines
+  text-align: center;  
 
 }  
     
@@ -123,9 +123,9 @@
       </div>
     </div>
     <div class="row">
-    	<div class="Center1">
+    	<div class="Center">
 	    <div class="col-6">
-          <label for="levelMenu" id="levelLabel" class="labelLevel" class="divlabel">Level</label>
+          <label for="levelMenu" id="levelLabel" class="labelLevel">Level</label>
         </div>
         <div class="col-6">
           <select name="levels" id="qualLevel" onchange="qualLevelaspecto()" class="divLabel">
@@ -169,6 +169,7 @@
         </div>
 	  </div>
 	<div class="row" >
+		<div class="Center">
 		    <button class="button-roxo" onclick="myTxt()" id="botaotxt">
             <strong>txt</strong> 
           </button>
@@ -181,6 +182,7 @@
           <button class="button-roxo"onclick="restartFunction()" id="botaorestart3">
             <strong>«</strong>
           </button>
+		</div>
 	  </div>
 	<div class="row">
 	<div class="Abs">Teste</div>
