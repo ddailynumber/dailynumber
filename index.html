@@ -87,11 +87,16 @@
 		padding: 50px;
 	}
 	  .Abs {
-		  position:relative;
+		  position:absolute;
 		  bottom:0px;
-  text-align: center;  
+  text-align: center;
   padding: 5px;
 }  
+	  .AbsParent{
+		  position:relative;
+		  height:150px;
+		  bottom:0px;
+	  }
     
     
   </style>
@@ -105,6 +110,7 @@
       <div class= "myCorpo" id="aqui"><b></b>
       </div>
     </div>
+    <div class="AbsParent">
     <div class="row">
     	<div class="Abs">
 	    <div class="col-6">
@@ -167,6 +173,7 @@
           </button>
 		</div>
 	  </div>
+    </div>
 	
   
   <script>
