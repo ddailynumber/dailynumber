@@ -3,236 +3,53 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Exercícios</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="wireframe.css">
-  <script src="https://api.countapi.xyz/hit/findthecolors.github.io/visits?callback=ftcViews" async></script>
   <style>
-		
-    .button-82-pushable {
-      position: relative;
-      border: none;
-      background: transparent;
-      padding: 0;
-      cursor: pointer;
-      outline-offset: 4px;
-      transition: filter 250ms;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-    }
-
-    .button-82-shadow {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 12px;
-      background: hsl(0deg 0% 0% / 0.25);
-      will-change: transform;
-      transform: translateY(2px);
-      transition:
-        transform 600ms cubic-bezier(.3, .7, .4, 1);
-    }
-
-    .button-82-edge {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 12px;
-      background: linear-gradient(to left,
-        rgb(82, 0, 0) 0%,
-        rgb(163, 0, 0) 8%,
-        rgb(163, 0, 0) 92%,
-        rgb(82, 0, 0) 100%);
+  
+    body {
+        background-color: lightblue;
     }
 	
-    .button-82-front {
-      display: block;
-      position: relative;
-      padding: 12px 27px;
-      border-radius: 12px;
-      font-size: 1.1rem;
-      color: white;
-      background: rgb(240, 0, 0);
-      will-change: transform;
-      transform: translateY(-4px);
-      transition:
-        transform 600ms cubic-bezier(.3, .7, .4, 1);
+	.button-vermelho {
+        background-color: red;
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }	
+    .button-azul {
+        background-color: blue;
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
     }
-
-    @media (min-width: 768px) {
-      .button-82-front {
-        font-size: 1.25rem;
-        padding: 12px 42px;
-      }
+    .button-roxo {
+        background-color: purple;
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
     }
-	@media (min-width: 768px) {
-      .button-82-front2 {
-        font-size: 1.25rem;
-        padding: 12px 42px;
-      }
-    }
-	@media (min-width: 768px) {
-      .button-82-front3 {
-        font-size: 1.25rem;
-        padding: 12px 42px;
-      }
-    }
-	@media (min-width: 768px) {
-      .button-100-front {
-        font-size: 1.25rem;
-        padding: 12px 42px;
-      }
-    }
-	@media (min-width: 768px) {
-      .button-101-front {
-        font-size: 1.25rem;
-        padding: 12px 42px;
-      }
-    }
-
-    .button-82-edge2 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 12px;
-      background: linear-gradient(to left,
-        rgb(82, 0, 0) 0%,
-        rgb(163, 0, 0) 8%,
-        rgb(163, 0, 0) 92%,
-        rgb(82, 0, 0) 100%);
-    }
-    .button-82-front2 {
-      display: block;
-      position: relative;
-      padding: 12px 27px;
-      border-radius: 12px;
-      font-size: 1.1rem;
-      color: white;
-      background: rgb(240, 0, 0);
-      will-change: transform;
-      transform: translateY(-4px);
-      transition:
-        transform 600ms cubic-bezier(.3, .7, .4, 1);
-    }
-
-    .button-82-edge3 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 12px;
-      background: linear-gradient(to left,
-        rgb(82, 0, 0) 0%,
-        rgb(163, 0, 0) 8%,
-        rgb(163, 0, 0) 92%,
-        rgb(82, 0, 0) 100%);
-    }
-    .button-82-front3 {
-      display: block;
-      position: relative;
-      padding: 12px 27px;
-      border-radius: 12px;
-      font-size: 1.1rem;
-      color: white;
-      background: rgb(240, 0, 0);
-      will-change: transform;
-      transform: translateY(-4px);
-      transition:
-        transform 600ms cubic-bezier(.3, .7, .4, 1);
-    }
-	.button-100-edge {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 12px;
-      background: linear-gradient(to left,
-        rgb(17, 6, 34) 0%,
-        rgb(33, 13, 67) 8%,
-        rgb(33, 13, 67) 92%,
-        rgb(17, 6, 34) 100%);
-    }
-	.button-100-front {
-      display: block;
-      position: relative;
-      padding: 12px 27px;
-      border-radius: 12px;
-      font-size: 1.1rem;
-      color: white;
-      background: rgb(50, 20, 100);
-      will-change: transform;
-      transform: translateY(-4px);
-      transition:
-        transform 600ms cubic-bezier(.3, .7, .4, 1);
-    }
-	.button-101-edge {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 12px;
-      background: linear-gradient(to left,
-        rgb(17, 6, 34) 0%,
-        rgb(33, 13, 67) 8%,
-        rgb(33, 13, 67) 92%,
-        rgb(17, 6, 34) 100%);
-    }
-	.button-101-front {
-      display: block;
-      position: relative;
-      padding: 12px 27px;
-      border-radius: 12px;
-      font-size: 1.1rem;
-      color: white;
-      background: rgb(80, 10, 40);
-      will-change: transform;
-      transform: translateY(-4px);
-      transition:
-        transform 600ms cubic-bezier(.3, .7, .4, 1);
-    }
-	
-
-    .button-82-pushable:hover {
-      filter: brightness(110%);
-      -webkit-filter: brightness(110%);
-    }
-
-    .button-82-pushable:hover .button-82-front {
-      transform: translateY(-6px);
-      transition:
-        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
-    }
-
-    .button-82-pushable:active .button-82-front {
-      transform: translateY(-2px);
-      transition: transform 34ms;
-    }
-
-    .button-82-pushable:hover .button-82-shadow {
-      transform: translateY(4px);
-      transition:
-        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
-    }
-
-    .button-82-pushable:active .button-82-shadow {
-      transform: translateY(1px);
-      transition: transform 34ms;
-    }
-
-    .button-82-pushable:focus:not(:focus-visible) {
-      outline: none;
-    }
+    
 
     .labelLevel{
       display:inline-block;
@@ -253,8 +70,7 @@
 </head>
 
 <body class="text-center">
-  <div class="p-3 h-100 d-flex flex-column bg-light" style="	background-image: linear-gradient(to bottom, rgba(100, 100, 255, 1), rgba(255, 255, 255, 1));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
-    <div class="container mb-auto">
+   <div class="container mb-auto">
       <div class="row">
         <div class="mx-auto col-md-9">
           <h1 class="text-light text-center" id="aqui2" ><strong>Exercícios</strong></h1>
@@ -293,21 +109,14 @@
           </select>
         </div>
         <div class="col-8" >
-          <button class="button-82-pushable" role="button" href="#" onclick="myFunction()" id="botaonext" style="float: right;">
-            <span class="button-82-shadow"></span>
-            <span class="button-82-edge"></span>
-            <span class="button-82-front text"><strong>></strong>  </span>
+          <button class="button-vermelho" onclick="myFunction()" id="botaonext">
+            <strong>></strong>
           </button>
-          <button class="button-82-pushable" role="button" href="#" onclick="confere(lvl)" id="botaoresultado" style="float: right;">
-            <span class="button-82-shadow"></span>
-            <span class="button-82-edge3"></span>
-            <span class="button-82-front3 text"> <strong>=</strong> </span>
+          <button class="button-vermelho" onclick="confere(lvl)" id="botaoresultado" >
+            <strong>=</strong> 
           </button>
-          <button class="button-82-pushable" role="button" href="#" onclick="restartFunction()" id="botaorestart" style="float: right;">
-            <span class="button-82-shadow"></span>
-            <span class="button-82-edge2"></span>
-            <span class="button-82-front2 text"> <strong>«</strong></span>
-          </button>
+            <button class="button-vermelho" onclick="restartFunction()" id="botaorestart" >    <strong>«</strong>            
+            </button>
         </div>
       </div>
 	  <div class="row">
@@ -316,20 +125,14 @@
 		<div class="col-2">
 		</div>
 		<div class="col-8">
-			<button class="button-82-pushable" role="button" href="#" onclick="myMultiplicacao()" id="botaomultiplicacao" style="float: right;">
-            <span class="button-82-shadow"></span>
-            <span class="button-100-edge"></span>
-            <span class="button-100-front text"><strong>*</strong>  </span>
+			<button class="button-azul" onclick="myMultiplicacao()" id="botaomultiplicacao">
+            <strong>*</strong>
           </button>
-		  <button class="button-82-pushable" role="button" href="#" onclick="resultadoMultiplicacao()" id="botaoresultadomultiplicacao" style="float: right;">
-            <span class="button-82-shadow"></span>
-            <span class="button-100-edge"></span>
-            <span class="button-100-front text"> <strong>=</strong> </span>
+		  <button class="button-azul" onclick="resultadoMultiplicacao()" id="botaoresultadomultiplicacao">
+            <strong>=</strong>
           </button>
-          <button class="button-82-pushable" role="button" href="#" onclick="restartFunction()" id="botaorestart2" style="float: right;">
-            <span class="button-82-shadow"></span>
-            <span class="button-100-edge"></span>
-            <span class="button-100-front text"><strong>«</strong></span>
+          <button class="button-azul" onclick="restartFunction()" id="botaorestart2">
+            <strong>«</strong>
           </button>
 		</div>
 	  </div>
@@ -339,33 +142,22 @@
 		<div class="col-2">
 		</div>
 		<div class="col-8">
-			<button class="button-82-pushable" role="button" href="#" onclick="myTxt()" id="botaotxt" style="float: right;">
-            <span class="button-82-shadow"></span>
-            <span class="button-101-edge"></span>
-            <span class="button-101-front text"><strong>txt</strong>  </span>
+		    <button class="button-roxo" onclick="myTxt()" id="botaotxt">
+            <strong>txt</strong> 
           </button>
-		  <button class="button-82-pushable" role="button" href="#" onclick="myTxtProx()" id="botaotxtprox" style="float: right;">
-            <span class="button-82-shadow"></span>
-            <span class="button-101-edge"></span>
-            <span class="button-101-front text"> <strong>></strong> </span>
+		  <button class="button-roxo" onclick="myTxtProx()" id="botaotxtprox">
+            <strong>></strong>
           </button>
-		  <button class="button-82-pushable" role="button" href="#" onclick="myTxtResul()" id="botaotxtresul" style="float: right;">
-            <span class="button-82-shadow"></span>
-            <span class="button-101-edge"></span>
-            <span class="button-101-front text"> <strong>=</strong> </span>
+		  <button class="button-roxo"onclick="myTxtResul()" id="botaotxtresul">
+            <strong>=</strong>
           </button>
-          <button class="button-82-pushable" role="button" href="#" onclick="restartFunction()" id="botaorestart3" style="float: right;">
-            <span class="button-82-shadow"></span>
-            <span class="button-101-edge"></span>
-            <span class="button-101-front text"><strong>«</strong></span>
+          <button class="button-roxo"onclick="restartFunction()" id="botaorestart3">
+            <strong>«</strong>
           </button>
 		</div>
 	  </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" style=""></script>
+  
   <script>
     let lvl = 1;
 	let proverbs;
