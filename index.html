@@ -19,7 +19,7 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 25px;
         margin: 4px 2px;
         cursor: pointer;
     }	
@@ -32,7 +32,7 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 25px;
         margin: 4px 2px;
         cursor: pointer;
     }
@@ -45,7 +45,7 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 25px;
         margin: 4px 2px;
         cursor: pointer;
     }
@@ -54,47 +54,73 @@
     .labelLevel{
       display:inline-block;
       width: 52px;
+      font-size: 20px;
       
     }
 
     .divLabel{
       margin-bottom: 10px;
+      font-size: 20px;
     }
 
     .viewsColor{
       color:rgb(229, 226, 226);
     }
-	
+    
+    .myTitulo {
+  		text-align: center;
+        font-size: 30px;
+        color: white;
+	}
+    
+	.myCorpo {
+  		text-align: center;
+        font-size: 60px;
+        margin-top: 10%;
+  		margin-bottom: 10%;
+	}
+    .Center1 {
+  		position: relative;
+        margin-top: 5%;
+  		margin-bottom: 5%;
+  		left: 50%;
+    }
+    .Center2 {
+  		position: relative;
+  		margin-top: 5%;
+  		margin-bottom: 5%;
+        left: 50%;
+    }
+    .Center3 {
+  		position: relative;
+  		margin-top: 5%;
+  		margin-bottom: 5%;
+        left: 50%;
+    }
+    .Center4 {
+  		position: relative;
+  		margin-top: 5%;
+  		margin-bottom: 5%;
+        left: 50%;
+    }
     
   </style>
 </head>
 
 <body class="text-center">
-   <div class="container mb-auto">
-      <div class="row">
-        <div class="mx-auto col-md-9">
-          <h1 class="text-light text-center" id="aqui2" ><strong>Exercícios</strong></h1>
-        </div>
+    <div class="row">
+        <h1 class="myTitulo" id="aqui2" ><strong>Exercícios</strong></h1>
+    </div>
+    <div class="row">
+      <div class= "myCorpo" id="aqui"><b></b>
       </div>
     </div>
-    <div class="container mb-auto">
-      <div class="row">
-        <div class="col-md-12 mx-auto">
-          <p class="lead" id="corpoMensagem"><br></p> 
-          <div class="row">
-            <div class="mx-auto col-md-9">
-              <div class= "text-center" id="aqui" style="font-size:30px;"><b></b></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mb-auto">
-      <div class="row">
-	    <div class="col-2">
+    <div class="row">
+    	<div class="Center1">
+	    <div class="col-6">
           <label for="levelMenu" id="levelLabel" class="labelLevel" class="divlabel">Level</label>
         </div>
-        <div class="col-2">
+        <div class="col-6">
           <select name="levels" id="qualLevel" onchange="qualLevelaspecto()" class="divLabel">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -108,7 +134,10 @@
             <option value="10">10</option>
           </select>
         </div>
-        <div class="col-8" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="Center2">
           <button class="button-vermelho" onclick="myFunction()" id="botaonext">
             <strong>></strong>
           </button>
@@ -119,13 +148,9 @@
             </button>
         </div>
       </div>
-	  <div class="row">
-		<div class="col-2">
-		</div>
-		<div class="col-2">
-		</div>
-		<div class="col-8">
-			<button class="button-azul" onclick="myMultiplicacao()" id="botaomultiplicacao">
+    <div class="row">
+		<div class="Center3">
+			<button class="button-azul"  onclick="myMultiplicacao()" id="botaomultiplicacao">
             <strong>*</strong>
           </button>
 		  <button class="button-azul" onclick="resultadoMultiplicacao()" id="botaoresultadomultiplicacao">
@@ -134,14 +159,10 @@
           <button class="button-azul" onclick="restartFunction()" id="botaorestart2">
             <strong>«</strong>
           </button>
-		</div>
+        </div>
 	  </div>
-	  <div class="row">
-		<div class="col-2">
-		</div>
-		<div class="col-2">
-		</div>
-		<div class="col-8">
+	<div class="row">
+		<div class="Center4">
 		    <button class="button-roxo" onclick="myTxt()" id="botaotxt">
             <strong>txt</strong> 
           </button>
