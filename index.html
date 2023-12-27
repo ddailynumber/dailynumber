@@ -60,16 +60,6 @@
         cursor: pointer;
 	    
     }
-    
-
-    .labelLevel{
-      font-size: 20px;
-    }
-    .divLabel{
-      font-size:15px;
-    }
-
-    
     .myTitulo {
   		text-align: center;
         	font-size: 20px;
@@ -91,13 +81,7 @@
          }  
 	  .AbsParent{
 		  padding:20px;
-	  }
-	  .Abs2{
-		  text-align:left;
-		  margin-top:20px;
-	  }
-    
-    
+	  }  
   </style>
 </head>
 
@@ -110,27 +94,6 @@
       </div>
     </div>
     <div class="AbsParent">
-    <div class="row">
-    	<div class="Abs2">
-	    <div class="col-6">
-          <label for="levelMenu" id="levelLabel" class="labelLevel">Level</label>
-        </div>
-        <div class="col-6">
-          <select name="levels" id="qualLevel" onchange="qualLevelaspecto()" class="divLabel">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-			<option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
-        </div>
-        </div>
-    </div>
     <div class="row">
         <div class="Abs">
           <button class="button-vermelho" onclick="myFunction()" id="botaonext">
@@ -171,11 +134,11 @@
             <strong>«</strong>
           </button>
 		</div>
-	  </div>
+	  </div> 
     </div>
   
   <script>
-    let lvl = 1;
+    let lvl = 10;
 	let proverbs;
 	let frase = "";
 	let ponto1 = -1;
@@ -262,9 +225,7 @@
       botaotxtprox.style.display = 'none';
       botaotxtresul.style.display = 'none';
 	  botaorestart3.style.display = 'none';
-	  
-      document.getElementById("qualLevel").style.display = 'block'
-      qualLevelaspecto();
+
       somaatual = 0;
       sinal = 0;
       pergunta = "";
@@ -292,7 +253,7 @@
 	  botaotxt.style.display = 'none';
       document.getElementById("levelLabel").innerHTML ='Level';
       var dificuldade;
-      dificuldade = document.getElementById("qualLevel").value;
+      dificuldade = 10;
       dificuldade = parseInt(dificuldade);
       var passos = 0;
       somaatual = getRandomInt(10,100);
@@ -311,9 +272,6 @@
        document.getElementById("aqui").innerHTML = pergunta;
       }
 	
-	function qualLevelaspecto() {
-      document.getElementById("levelLabel").innerHTML ='Level';
-    }
     
 	function confere() {
     	botaonext.style.display = 'none';
